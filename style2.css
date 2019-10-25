@@ -6,7 +6,6 @@
 }
 
 body{
-	
 
 }
 
@@ -45,7 +44,7 @@ tr:nth-child(even) {
 }
 	/*FOOTER*/
 .footer {
-   margin-top: 30px;
+   /*margin-bottom: 50px;*/
    /*position:;*/
    left: 0;
    bottom: 0;
@@ -81,7 +80,7 @@ tbody a {
 	width: 200px;
 	height: 200px;
 	float: left;
-	margin-left: 40%;
+	margin-left: 43%;
 
 }
 
@@ -170,11 +169,38 @@ tbody a {
 	margin:20px 100px 20px 30px;
 }
 
+.article-cariLokasi .img-icon{
+	width: 30px;
+	height: 30px;
+}
+.article-cariLokasi{
+	width: 55%;
+	  display: table;
+  margin-left: 300px;
+  font-size: 27px;
+  text-align: justify;
+
+}	
+
+.article-cariLokasi table {
+	width: 100%;
+	font-size: 16px;
+	color: black;
+}
+
+.article-cariLokasi table td{
+	color: black;
+}
 .article-caratanam {
 	
 	float: left;
 	
-	margin: 60px 25px 0px 0px;
+	margin: 60px 10px 70px 15px;
+}
+
+.article-caratanam label{
+	margin-left: 20px;
+
 }
 
 .article-caratanam .img-icon {
@@ -188,6 +214,24 @@ tbody a {
 	width: 200px;
 	height: 300px;
 	object-fit: cover;
+
+}
+
+.article-jenis {
+	float: left;
+	display: table;
+	margin-right: 80px;
+	margin-left: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.article-jenis img {
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+	border: 1px solid black;
+	border-radius: 10px;
 
 }
 
