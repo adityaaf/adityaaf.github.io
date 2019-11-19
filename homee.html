@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<marquee></marquee>
-	<title>PetikApel | RegistrasiAkunBaru</title>
+
+	<title>PetikApel | Cara Penanaman</title>
 	<link rel = "icon" href="logo.png" type = "image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -10,9 +10,11 @@
 <body>
 
 
+	<div class="header-index">
+		<img src="logo.png">
+	</div>
 
 	<div class="menu">
-		<img src="logo.png">
 		
 		<ul>
 			<li><a href="berita.html">Home</a></li>
@@ -21,7 +23,7 @@
 			<li><a href="perawatan.html">Perawatan</a></li>
 			<li><a href="index.html">Belanja</a></li>
 		</ul>
-		
+
 		<div class="search">
 			<input type="text" placeholder="Cari Sesuatu..."><i class="fa fa-search"></i>
 		</div>
@@ -29,6 +31,7 @@
 
 	<marquee BGcolor="#F3F781"><font color="red"><B>Selamat Datang Di Petik Apel, Silahkan Mengisi Form yang ada dibawah!</B></marquee>	
 
+	<form name="myForm" method="POST" action="login.html" onsubmit="return validateForm()">
 
 	<div class="pondasi">
 		<div class="heading">
@@ -38,27 +41,27 @@
 			<form action="login.html" method="post">
 				<div class="grup">
 					 <label for="Nama">Nama Lengkap</label>
-					 <input type="text" placeholder="Masukkan nama anda">
+					 <input type="text" placeholder="Masukkan nama anda" name="nama">
 				</div>
 				<div class="grup">
 					 <label for="email">Email</label>
-					 <input type="text" placeholder="Masukkan email anda">
+					 <input type="text" placeholder="Masukkan email anda" name="email">
 				</div>
 				<div class="grup">
 					 <label for="No.Telpon">No.Telpon</label>
-					 <input type="text" placeholder="Masukkan Np.Telpon anda">
+					 <input type="text" placeholder="Masukkan Np.Telpon anda" name="notelp">
 				</div>
 				<div class="grup">
 					<label for="password">Password</label>
-					<input type="password" placeholder="Masukkan password anda">
+					<input type="password" placeholder="Masukkan password anda" name="password">
 				</div>
 				<div class="grup">
 					<label for="password">Masukkan Kembali Password</label>
-					<input type="password" placeholder="Masukkan ulang password anda">
+					<input type="password" placeholder="Masukkan ulang password anda" name="cpassword">
 				</div>
 				<p>Sudah Punya Akun ? <a href="login.html">Login Disini</a></p>
 				<div class="grup">
-					<input type="submit" value="Daftar" onclick="location.href='login.html';">
+					<input type="submit" value="Daftar">
 				</div>
 			</form>
 		</div>
@@ -81,3 +84,40 @@
 		
 </body>
 </html>
+
+<script type="text/javascript">
+	    	function validateForm() {
+		  var nama = document.forms["myForm"]["nama"].value;
+		  var email = document.forms["myForm"]["email"].value;
+		  var notelp = document.forms["myForm"]["notelp"].value;
+		  var password = document.forms["myForm"]["password"].value;
+		  var cpassword = document.forms["myForm"]["cpassword"].value;
+
+		  if (nama == "") {
+		    alert("Nama Harus Di Isi");
+		    return false;
+		  }
+
+		  else if (email == "") {
+		    alert("Email Harus Di isi");
+		    return false;
+		  }
+
+		  else if (notelp == "") {
+		    alert("No Telepon Harus Di Isi");
+		    return false;
+		  }
+
+		  else if (password == "") {
+		    alert("Password Harus Di Isi");
+		    return false;
+		  }
+
+		  else if (cpassword == "") {
+		    alert("Confirm Password Harus Di Isi");
+		    return false;
+		  }
+
+		}
+
+</script>

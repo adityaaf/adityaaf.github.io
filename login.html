@@ -41,14 +41,14 @@
 			<h2 class="judul">Form Login</h2>
 		</div>
 		<div class="formnya">
-			<form action="keranjang.html" method="post">
+			<form name="myForm" method="POST" action="keranjang.html" onsubmit="return validateForm()">
 				<div class="grup">
 					 <label for="email">Email</label>
-					 <input type="text" placeholder="Masukkan email anda">
+					 <input type="text" placeholder="Masukkan email anda" name="email">
 				</div>
 				<div class="grup">
 					<label for="password">Password</label>
-					<input type="password" placeholder="Masukkan password anda">
+					<input type="password" placeholder="Masukkan password anda" name="password">
 				</div>
 				<p>Belum Punya Akun ? <a href="homee.html">Daftar Disini</a></p>
 				<div class="grup">
@@ -74,3 +74,27 @@
 		
 </body>
 </html>
+
+<script type="text/javascript">
+	    	function validateForm() {
+		  var email = document.forms["myForm"]["email"].value;
+		  var password = document.forms["myForm"]["password"].value;
+
+		  if (email == "") {
+		    alert("Email Harus Di Isi");
+		    return false;
+		  }
+
+		  else if (password == "") {
+		    alert("Password Harus Di isi");
+		    return false;
+		  }
+
+		  // else if (document.getElementsByName("email").value != "admin" && document.getElementsByName("password").value != "admin"){
+		  // 	alert("Salah");
+		  // 	return false;
+		  // }
+
+		}
+
+</script>

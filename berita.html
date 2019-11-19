@@ -33,9 +33,45 @@
 		</div>
 	</div>
 
-	<div class="img-head2">
+<!-- 	<div class="img-head2">
 		<br><br><br><br><br><br>
-	</div>
+	</div> -->
+
+	 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"> </div>
+    <img src="gambar/perkebunan.jpg" class="img-slide">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="gambar/apel2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="gambar/apell.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
 	<br>
 	<div><center><img src="gambar/history.png" width="70" height="70"></center>
 	<center><h1>SEJARAH BERDIRINYA PEKEBUNAN APEL MANGLI</h1>
@@ -45,7 +81,7 @@
 	<div><center><img src="gambar/perkebunan.jpg" width="450" height="300" style="box-shadow: 14px 15px 11px -4px grey;"></center>
 	<br>
 	<div class="article-cariLokasi">
-		 <br>
+		<br>
 		<center> Pekebunan Mangli beridiri sejak tahun 2018.</center>
 		<br> 
 		Perkebunan Apel Mangli Dibangun dan dirintis oleh ide cendekiawan yang bernama Aditya Ari Fikri dan Rizal Ramdhani yang merupakan mahasiswa aktif Fakultas Ilmu Komputer.<br>
@@ -93,7 +129,7 @@
 		</div>
 
 		<div class="img-product">
-			<img src="gambar/apel4.jpeg" style="border-radius: 20px;">
+			<img src="gambar/apel4.jpEg" style="border-radius: 20px;">
 			<p>Apel Manalagi</p>
 			<br>
 		</div>
@@ -123,7 +159,7 @@
 		</div>
 
 		<div class="img-product">
-			<img src="gambar/cuka.png" style="border-radius: 20px;">
+			<img src="gambar/Cuka.png" style="border-radius: 20px;">
 			<p>Cuka Apel</p>
 			<br>
 		</div>
@@ -136,6 +172,62 @@
 		<br>
 
 </div> 
+
+<!-- <div class="container" style="border:1px solid black;">
+  <img src="gambar/dodol.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+
+<div class="container" style="border:1px solid black;">
+  <img src="gambar/Cuka.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div> -->
 
 <div class="footer"> 
 	<br>
@@ -153,3 +245,22 @@
 </div>		 
 
 </body> </html>
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+
+</script>
